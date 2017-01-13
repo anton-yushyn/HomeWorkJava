@@ -64,4 +64,29 @@ public class Room {
     public void setCityName(String cityName) {
         this.cityName = cityName;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (getClass() != o.getClass())
+            return false;
+
+        Room room = (Room) o;
+
+//        if (price != room.price) return false;
+//        if (persons != room.persons) return false;
+//        return cityName != null ? cityName.equals(room.cityName) : room.cityName == null;
+        return this.cityName == ((Room) o).cityName &&
+                this.persons == ((Room) o).persons &&
+                this.price == ((Room) o).price;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = price;
+        result = 31 * result + persons;
+        result = 31 * result + (cityName != null ? cityName.hashCode() : 0);
+        return result;
+    }
 }
