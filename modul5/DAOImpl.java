@@ -2,9 +2,6 @@ package modul5;
 
 import java.util.Date;
 
-/**
- * Created by admin on 015 15.01.17.
- */
 public class DAOImpl implements DAO {
     @Override
     public Room save(Room room) {
