@@ -1,5 +1,7 @@
 package modul5;
 
+import java.util.Date;
+
 public class Room {
     private long id;
     private int price;
