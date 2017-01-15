@@ -13,6 +13,9 @@ public class TripAdvisorAPI extends AbsractAPI {
         roomTrip[2] = new Room(003, 600, 3, new Date(2), "Hisperia", "Olomouc");
         roomTrip[3] = new Room(004, 300, 2, new Date(3), "Juno", "Praha");
         roomTrip[4] = new Room(005, 150, 1, new Date(2), "Juno", "Praha");
-
+    }
+    @Override
+    public Room[] getRooms() {
+        return roomTrip;
     }
 }

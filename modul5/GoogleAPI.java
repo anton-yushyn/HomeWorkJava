@@ -12,4 +12,8 @@ public class GoogleAPI extends AbsractAPI {
         roomGoogle[3]= new Room(004, 40, 1, new Date(1), "Hisperia", "Olomouc");
         roomGoogle[4]= new Room(005, 220, 1, new Date(5), "Ukraine", "Kyiv");
     }
+    @Override
+    public Room[] getRooms() {
+        return roomGoogle;
+    }
 }

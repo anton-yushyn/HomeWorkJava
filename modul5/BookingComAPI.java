@@ -13,8 +13,8 @@ public class BookingComAPI extends AbsractAPI {
         roomsBook[3] = new Room(004, 300, 2, new Date(3), "Juno", "Praha");
         roomsBook[4] = new Room(005, 150, 1, new Date(2), "Juno", "Praha");
     }
-
-//    public Room[] getRoomsBook() {
-//        return roomsBook;
-//    }
+    @Override
+    public Room[] getRooms() {
+        return roomsBook;
+    }
 }
